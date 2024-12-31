@@ -39,7 +39,7 @@ LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
   csmaDevices = csma.Install (csmaNodes);
 
   InternetStackHelper stack;
-  stack.Install (p2pNodes.Get(0));
+  stack.Install (p2pNodes);
   stack.Install (csmaNodes);
 
   Ipv4AddressHelper address;
